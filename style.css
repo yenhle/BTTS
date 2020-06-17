@@ -1,0 +1,142 @@
+* {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Andale Mono, monospace;
+    align-items: center;
+    justify-content: center;
+  }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-size: 70px;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2.3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						4px 4px #FFA07A,
+            10px 10px #808080;
+  text-align: center;
+}
+
+  .container {
+    min-height: 3em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    outline: none;
+    border: 6px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: none;
+    transition: all 0.2s ease-in-out;
+    margin-top: 3em ;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background: #E9967A;
+    color: white;
+  }
+
+  .play-area {
+    margin-top: 3em;
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: auto auto auto auto auto;
+  }
+  .block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .block:hover {
+    cursor: pointer;
+    background:#E9967A;
+  }
+
+  .occupied:hover {
+    background: bisque;
+  }
+
+  #container1 {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #winner {
+    margin-top: 3em;
+  }
+  
+  #block_0,
+  #block_1,
+  #block_2, 
+  #block_3,
+  #block_4{
+    border-top: none;
+  }
+
+  #block_0,
+  #block_5,
+  #block_10,
+  #block_15,
+  #block_20
+   {
+    border-left: none;
+  }
+
+  #block_20,
+  #block_21,
+  #block_22,
+  #block_23,
+  #block_24 {
+    border-bottom: none;
+  }
+
+  #block_4,
+  #block_9,
+  #block_14,
+  #block_19,
+  #block_24 {
+    border-right: none;
+  }
+
+.player1 {
+  color: #E9967A;
+}
+.player2 {
+  color: #E9967A;
+}
+.tie {
+  color: #E9967A;
+}
+
+/*
+  .playerWin {
+    color: green;
+  }
+  
+  .computerWin {
+    color: red;
+  }
+  
+  .draw {
+    color: orangered;
+  }
+  */
+ 
