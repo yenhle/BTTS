@@ -32,7 +32,7 @@ is_board_full = () => {
 
 /**************Check winner****************/ 
 /*  Rule to find winner: 
-    (1) We will check if there is any three boxes in a 
+    (1) We will check if there is any 4 boxes in a 
         row/column/diagonal has the same element (jin or jhope). 
     (2) We need to make sure the "same element" is 
         either jin or jhope, not space ""
